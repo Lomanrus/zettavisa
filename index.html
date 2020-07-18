@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="flex-wrapper">
+                <img src="src/img/logo-white.svg" alt="Zettavisa">
+                <div class="socials socials_header">
+                    <span>Всегда на связи</span>
+                    <a href="tel:+79605950422">8 (960)595-04-22</a>
+                    <span>Напишите нам</span>
+                    <div class="flex-wrapper">
+                        <a href="tg.me" class="telegramm-link"></a>
+                        <a href="#" class="whattsapp-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="from-block">
+                <h3 class="callback-block__heading callback-block__heading_head">В какую страну нужна виза?</h3>
+                <form class="callback-form">
+                    <label for="country-select_head">
+                        Выберите страну
+                        <select name="countries" id="country-select_head">
+                            <option value="Austria" selected>Австрия</option>
+                        </select>
+                    </label>
+                    <label for="phone_head">
+                        Телефон для связи
+                        <input id="phone_head" type="tel" placeholder="8 (000) 000-00-00" pattern="">
+                    </label>
+                    <input type="submit" value="Получить визу" class="callback-form__submit">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="prices">
+        <div class="container">
+            <div class="regions">
+                <h2 class="section-heading">
+                    Выберите направление
+                </h2>
+                <div class="flex-wrapper">
+                    <ul class="regions-list">
+                        <li class="regions-list__item"><a href=""><img src="src/icons/america.png" aria-hidden="true" class="region__image"><img src="src/icons/america-flag.png" alt="" class="region__image region__image-alt">Америка</a></li>
+                        <li class="regions-list__item"><a href=""><img src="src/icons/map.png" aria-hidden="true" class="region__image"><img src="src/icons/euro-flag.png" alt="" class="region__image region__image-alt">Шенгенская<br>зона</a></li>
+                        <li class="regions-list__item"><a href=""><img src="src/icons/asia.png" aria-hidden="true" class="region__image">
+                            <img src="src/icons/asia-flag.png" alt="" class="region__image region__image-alt">Страны<br>Азии</a></li>
+                    </ul>
+                    <button class="all-regions-btn"><span>Остальные страны</span></button>
+                </div>
+            </div>
+            <div class="rates">
+                <h2 class="section-heading">Наши тарифы</h2>
+                <ul class="rates-list">
+                    <li class="rates-list__item rate">
+                        <div class="flex-column">
+                            <h3 class="rate__heading">«Под ключ»</h3>
+                            <span class="rate__text">Полное оформление документов с подачей в ВЦ. Все сборы включены</span>
+                            <span class="rate__price">4900</span>
+                        </div>
+                        <div class="flex-column">
+                            <button class="rate__more-info">Подробнее о тарифе</button>
+                            <button class="rate__callback callback">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="rates-list__item rate">
+                        <div class="flex-column">
+                            <h3 class="rate__heading">«Подготовка»</h3>
+                            <span class="rate__text">Полная подготовка для самостоятельной подачи.
+Сборы оплачиваются самостоятельно</span>
+                            <span class="rate__price">2000</span>
+                        </div>
+                        <div class="flex-column">
+                            <button class="rate__more-info">Подробнее о тарифе</button>
+                            <button class="rate__callback callback">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="rates-list__item rate">
+                        <div class="flex-column">
+                            <h3 class="rate__heading">«Срочная виза»</h3>
+                            <span class="rate__text">Срочное оформление визы под ключ. Все сборы включены</span>
+                            <span class="rate__price">9900</span>
+                        </div>
+                        <div class="flex-column">
+                            <button class="rate__more-info">Подробнее о тарифе</button>
+                            <button class="rate__callback callback">Оставить заявку</button>
+                        </div>
+                    </li>
+                    <li class="rates-list__item rate">
+                        <div class="flex-column">
+                            <h3 class="rate__heading">«Гарантированная»</h3>
+                            <span class="rate__text">Оформление длинной визы под ключ в максимально сжатые сроки от 3 до 5 лет гарантированно. Все сборы включены</span>
+                            <span class="rate__price">28500</span>
+                        </div>
+                        <div class="flex-column">
+                            <button class="rate__more-info">Подробнее о тарифе</button>
+                            <button class="rate__callback callback">Оставить заявку</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="advantages_countries">
+        <div class="container">
+            <div class="advantages">
+                <h2 class="section-heading">Мы оформим визу...</h2>
+                <ul class="advantages-list">
+                    <div class="flex-column">
+                        <li class="advantage">
+                            <img src="src/icons/creditcard-no.svg" alt="" aria-hidden="true">
+                            <div class="flex-column">
+                                <h3 class="advantage__heading">Без оплаченной брони</h3>
+                                <span class="advantage__text">Вы не рискуете своими деньгами, бронируя заранее, мы сами подготовим бронь.</span>
+                            </div>
+                        </li>
+                        <li class="advantage">
+                            <img src="src/icons/pencil-edit.svg" alt="" aria-hidden="true">
+                            <div class="flex-column">
+                                <h3 class="advantage__heading">Без доверенности</h3>
+                                <span class="advantage__text">Экономьте свое время, нам и так доверяют;)</span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="flex-column">
+                        <li class="advantage">
+                            <img src="src/icons/laughing.svg" alt="" aria-hidden="true">
+                            <div class="flex-column">
+                                <h3 class="advantage__heading">Без личного присутствия</h3>
+                                <span class="advantage__text">Нам не нужны оплаченные брони, вы не рискуете своими деньгами.</span>
+                            </div>
+                        </li>
+                        <li class="advantage">
+                            <img src="src/icons/shield-lock.svg" alt="" aria-hidden="true">
+                            <div class="flex-column">
+                                <h3 class="advantage__heading">Безопасно</h3>
+                                <span class="advantage__text">Можете планировать поездку, во время оформления визы. Положитесь на нас.</span>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="flex-column">
+                        <li class="advantage">
+                            <img src="src/icons/time-history.svg" alt="" aria-hidden="true">
+                            <div class="flex-column">
+                                <h3 class="advantage__heading">За сутки</h3>
+                                <span class="advantage__text">Мы уменьшаем срок получения визы до одних суток для наших клиентов.</span>
+                            </div>
+                        </li>
+                        <li class="advantage">
+                            <img src="src/icons/wallet.svg" alt="" aria-hidden="true">
+                            <div class="flex-column">
+                                <h3 class="advantage__heading">Выгодно</h3>
+                                <span class="advantage__text">Стоимость наших услуг немного ниже рынка, при высоком качестве обслуживания,</span>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="countries">
+                <h2 class="section-heading">Популярные страны</h2>
+                <ul class="countries-list">
+                    <li class="country">
+                        <div class="country__outter">
+                            <div class="country__inner">
+                                <h3 class="country__heading">США</h3>
+                                <span>Срок выдачи</span>
+                                <div class="counry__term">6</div>
+                                <span>Цена</span>
+                                <div class="country__price">7800</div>
+                                <button class="country__callback callback">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <div class="country__outter">
+                            <div class="country__inner">
+                                <h3 class="country__heading">США</h3>
+                                <span>Срок выдачи</span>
+                                <div class="counry__term">6</div>
+                                <span>Цена</span>
+                                <div class="country__price">7800</div>
+                                <button class="country__callback callback">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <div class="country__outter">
+                            <div class="country__inner">
+                                <h3 class="country__heading">США</h3>
+                                <span>Срок выдачи</span>
+                                <div class="counry__term">6</div>
+                                <span>Цена</span>
+                                <div class="country__price">7800</div>
+                                <button class="country__callback callback">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <div class="country__outter">
+                            <div class="country__inner">
+                                <h3 class="country__heading">США</h3>
+                                <span>Срок выдачи</span>
+                                <div class="counry__term">6</div>
+                                <span>Цена</span>
+                                <div class="country__price">7800</div>
+                                <button class="country__callback callback">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <div class="country__outter">
+                            <div class="country__inner">
+                                <h3 class="country__heading">США</h3>
+                                <span>Срок выдачи</span>
+                                <div class="counry__term">6</div>
+                                <span>Цена</span>
+                                <div class="country__price">7800</div>
+                                <button class="country__callback callback">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <div class="country__outter">
+                            <div class="country__inner">
+                                <h3 class="country__heading">США</h3>
+                                <span>Срок выдачи</span>
+                                <div class="counry__term">6</div>
+                                <span>Цена</span>
+                                <div class="country__price">7800</div>
+                                <button class="country__callback callback">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2 class="section-heading">Услуги Zettavisa</h2>
+            <ul class="services-list">
+                <li class="services-list__item service">
+                    <img src="src/icons/file.png" alt="Документ" class="service__icon">
+                    <h3 class="service__heading">Оформление виз</h3>
+                    <span class="service__text">Оформление<br> во все страны мира от&nbsp;одного дня</span>
+                    <button class="service__button">Подробнее об услуге</button>
+                </li>
+                <li class="services-list__item service">
+                    <img src="src/icons/file.png" alt="Документ" class="service__icon">
+                    <h3 class="service__heading">Загранпаспорта</h3>
+                    <span class="service__text">Помощь в получении загранпаспорта</span>
+                    <button class="service__button">Подробнее об услуге</button>
+                </li>
+                <li class="services-list__item service">
+                    <img src="src/icons/file.png" alt="Документ" class="service__icon">
+                    <h3 class="service__heading">Страхование</h3>
+                    <span class="service__text">Страховка для выезда за границу по доступным тарифам</span>
+                    <button class="service__button">Подробнее об услуге</button>
+                </li>
+                <li class="services-list__item service">
+                    <img src="src/icons/file.png" alt="Документ" class="service__icon">
+                    <h3 class="service__heading">Бронирование авиабилетов</h3>
+                    <span class="service__text">Дешевые авиабилеты прямо на нашем сайте</span>
+                    <button class="service__button">Подробнее об услуге</button>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="comments">
+        <div class="container">
+            <h2 class="section-heading">Отзывы о работе</h2>
+
+            <ul class="comments-list">
+                <li class="comments-list__comment comment">
+                    <div class="flex-wrapper">
+                        <img src="src/icons/user.png" alt="Аватар" class="comment__img">
+                        <span class="comment__name">Андрей</span>
+                    </div>
+                    <div class="comment__text">Оформил визу для поездки в Китай по работе. Порадовала скорость получения и доступные цены</div>
+                </li>
+                <li class="comments-list__comment comment">
+                    <div class="flex-wrapper">
+                        <img src="src/icons/user.png" alt="Аватар" class="comment__img">
+                        <span class="comment__name">Марина</span>
+                    </div>
+                    <div class="comment__text">Съездили отдохнуть на море! Все суууупер!!)</div>
+                </li>
+                <li class="comments-list__comment comment">
+                    <div class="flex-wrapper">
+                        <img src="src/icons/user.png" alt="Аватар" class="comment__img">
+                        <span class="comment__name">Екатерина</span>
+                    </div>
+                    <div class="comment__text">Спасибо, быстро и недорого</div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="news">
+        <div class="container">
+            <h2 class="section-heading">Новости компании</h2>
+            <ul class="news-list">
+                <li class="news-list__item single-news">
+                    <h3 class="single-news__heading">Zettavisa оформила 150 виз за&nbsp;июль</h3>
+                    <p class="single-news__text">За этот месяц наша компания помогла оформить визы для 150 человек. Это на 5% больше, чем за предыдущий месяц. Самые популярные направления оказались страны Америки, Европы и Азии. Мы стараемся ради наших клиентов и с каждым оформлением гарантируем вам...</p>
+                    <a href="#" class="single-news__link">Читать далее</a>
+                </li>
+                <li class="news-list__item single-news">
+                    <h3 class="single-news__heading">Помогаем оформить загранпаспорт</h3>
+                    <img src="src/img/news-preview.png" alt="" class="single-news__preview">
+                    <p class="single-news__text">Мы стараемся ради наших клиентов и с каждым оформлением гарантируем вам...</p>
+                    <a href="#" class="single-news__link">Читать далее</a>
+                </li>
+                <li class="news-list__item single-news">
+                    <h3 class="single-news__heading">Заголовок в одну строку</h3>
+                    <p class="single-news__text">За этот месяц наша компания помогла оформить визы для 150 человек. Это на 5% больше, чем за предыдущий месяц. Самые популярные направления оказались страны Америки, Европы и Азии. Мы стараемся ради наших клиентов и с каждым оформлением гарантируем вам...</p>
+                    <a href="#" class="single-news__link">Читать далее</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="our-contacts">
+        <div class="container">
+            <h2 class="section-heading">Наши контакты</h2>
+            <div class="flex-wrapper">
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f1ed91e2182832b2efc48637c4a81edae2c63c6c3d3faee678937b37fe8304d&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contact-block">
+                    <span class="contact-block__heading">Адрес</span>
+                    <span class="contact-block__data">г. Москва, Фролов переулок, д.1</span>
+                    <span class="contact-block__heading">Телефон</span>
+                    <span class="contact-block__data"><a href="tel:+79605950422">8(960)595-04-22</a></span>
+                    <span class="contact-block__heading">Мессенджеры</span>
+                    <div class="flex-wrapper">
+                        <a href="tg.me" class="telegramm-link"></a>
+                        <a href="#" class="whattsapp-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="callback-section">
+        <div class="callback-block">
+            <div class="container">
+                <div class="from-block">
+                    <h3 class="callback-block__heading">В какую страну нужна виза?</h3>
+                    <form class="callback-form">
+                        <label for="country-select">
+                            Выберите страну
+                            <select name="countries" id="country-select">
+                                <option value="Austria" selected>Австрия</option>
+                            </select>
+                        </label>
+                        <label for="phone">
+                            Телефон для связи
+                            <input id="phone" type="tel" placeholder="8 (000) 000-00-00" pattern="">
+                        </label>
+                        <input type="submit" value="Получить визу" class="callback-form__submit">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="basement">
+        <div class="container">
+            <img src="src/img/logo-black.png" alt="Zettavisa" class="logo">
+            <div class="socials">
+                <span>Всегда на связи</span>
+                <a href="tel:+79605950422">8 (960)595-04-22</a>
+                <span>Напишите нам</span>
+                <div class="flex-wrapper">
+                    <a href="tg.me" class="telegramm-link"></a>
+                    <a href="#" class="whattsapp-link"></a>
+                </div>
+            </div>
+            <div class="payments">
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="modals">
+        <div id="modal-about" class="modals__description modal modal_small">
+            <div class="flex-wrapper">
+                <div class="modal__heading">Описание услуги</div>
+                <div class="modal__close-button"></div>
+            </div>
+            <div class="modal__wrapper">
+                <h3 class="section-heading">Оформление виз</h3>
+                <p class="modal__text">Товарищи! укрепление и развитие структуры в значительной степени обуславливает создание модели развития. Товарищи! постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что консультация с широким активом играет важную роль в формировании соответствующий условий активизации. </p>
+                <button class="callback">Оформить заявку</button>
+            </div>
+        </div>
+
+        <div class="modal__form modal modal_small" id="modal-form">
+            <div class="flex-wrapper">
+                <div class="modal__heading">Оставить заявку</div>
+                <div class="modal__close-button"></div>
+            </div>
+            <div class="modal__wrapper">
+                <h3 class="section-heading">Перезвоним вам в ближайшее время</h3>
+                <form class="callback-form">
+                    <label for="modal-form__name">
+                        Ваше имя
+                        <input id="modal-form__name" placeholder="Как к вам обращаться?" required>
+                    </label>
+                    <label for="modal-form__phone">
+                        Телефон для связи
+                        <input id="modal-form__phone" type="tel" placeholder="8 (000) 000-00-00" required>
+                    </label>
+                    <input type="submit" value="Получить визу" class="callback-form__submit modal-form__submit">
+                </form>
+            </div>
+        </div>
+        <div class="modal" id="modal-rates">
+            <div class="flex-wrapper">
+                <div class="modal__heading">Подробнее о тарифах</div>
+                <div class="modal__close-button"></div>
+            </div>
+            <ul class="modal__wrapper">
+                <li class="modal__rate">
+                    <span class="modal-rate__heading">«Под ключ»</span>
+                    <ul class="modal__services">
+                        <li>Анкета</li>
+                        <li>Бронирование отеля</li>
+                        <li>Бронирование авиабилетов</li>
+                        <li>От 5 дней</li>
+                        <li>Подача в ВЦ</li>
+                        <li>Консульский сбор</li>
+                        <li>Визовый сбор</li>
+                        <li>Курьерские услуги</li>
+                        <li>Сопровождение на дактилоскопию</li>
+                        <li>Запись в ВЦ</li>
+                        <li class="inactive">Усиливаем визовый пакет для увеличения % одобрения</li>
+                        <li class="inactive">Логистический сбор</li>
+                        <li class="inactive">Страховка на 10 дней</li>
+                    </ul>
+                    <button class="callback">Оставить заявку</button>
+
+                </li>
+                <li class="modal__rate">
+                    <span class="modal-rate__heading">«Под ключ»</span>
+                    <ul class="modal__services">
+                        <li>Анкета</li>
+                        <li>Бронирование отеля</li>
+                        <li>Бронирование авиабилетов</li>
+                        <li>От 5 дней</li>
+                        <li class="inactive">Подача в ВЦ</li>
+                        <li class="inactive">Консульский сбор</li>
+                        <li class="inactive">Визовый сбор</li>
+                        <li class="inactive">Курьерские услуги</li>
+                        <li class="inactive">Сопровождение на дактилоскопию</li>
+                        <li class="inactive">Запись в ВЦ</li>
+                        <li class="inactive">Усиливаем визовый пакет для увеличения % одобрения</li>
+                        <li class="inactive">Логистический сбор</li>
+                        <li class="inactive">Страховка на 10 дней</li>
+                    </ul>
+                    <button class="callback">Оставить заявку</button>
+
+                </li>
+                <li class="modal__rate">
+                    <span class="modal-rate__heading">«Под ключ»</span>
+                    <ul class="modal__services">
+                        <li>Анкета</li>
+                        <li>Бронирование отеля</li>
+                        <li>Бронирование авиабилетов</li>
+                        <li>От 5 дней</li>
+                        <li>Подача в ВЦ</li>
+                        <li>Консульский сбор</li>
+                        <li>Визовый сбор</li>
+                        <li>Курьерские услуги</li>
+                        <li>Сопровождение на дактилоскопию</li>
+                        <li>Запись в ВЦ</li>
+                        <li>Усиливаем визовый пакет для увеличения % одобрения</li>
+                        <li>Логистический сбор</li>
+                        <li>Страховка на 10 дней</li>
+                    </ul>
+                    <button class="callback">Оставить заявку</button>
+
+                </li>
+                <li class="modal__rate">
+                    <span class="modal-rate__heading">«Под ключ»</span>
+                    <ul class="modal__services">
+                        <li>Анкета</li>
+                        <li>Бронирование отеля</li>
+                        <li>Бронирование авиабилетов</li>
+                        <li>От 5 дней</li>
+                        <li>Подача в ВЦ</li>
+                        <li>Консульский сбор</li>
+                        <li>Визовый сбор</li>
+                        <li>Курьерские услуги</li>
+                        <li>Сопровождение на дактилоскопию</li>
+                        <li>Запись в ВЦ</li>
+                        <li>Усиливаем визовый пакет для увеличения % одобрения</li>
+                        <li>Логистический сбор</li>
+                        <li>Страховка на 10 дней</li>
+                    </ul>
+                    <button class="callback">Оставить заявку</button>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="modal" id="modal-success">
+            <div class="flex-wrapper">
+                <div class="modal__heading">Спасибо!<br><span>Мы приняли вашу заявку. Ожидайте звонка.</span></div>
+                <div class="modal__close-button"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

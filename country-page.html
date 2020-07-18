@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="flex-wrapper">
+            <img src="src/img/logo-white.svg" alt="Zettavisa">
+            <div class="socials socials_header">
+                <span>Всегда на связи</span>
+                <a href="tel:+79605950422">8 (960)595-04-22</a>
+                <span>Напишите нам</span>
+                <div class="flex-wrapper">
+                    <a href="tg.me" class="telegramm-link"></a>
+                    <a href="#" class="whattsapp-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="from-block">
+            <h3 class="callback-block__heading callback-block__heading_head">Шенгенская виза в Австрию</h3>
+            <form class="callback-form">
+                <label for="country-select_head">
+                    Выберите страну
+                    <select name="countries" id="country-select_head">
+                        <option value="Austria" selected>Австрия</option>
+                    </select>
+                </label>
+                <label for="phone_head">
+                    Телефон для связи
+                    <input id="phone_head" type="tel" placeholder="8 (000) 000-00-00" pattern="">
+                </label>
+                <input type="submit" value="Получить визу" class="callback-form__submit">
+            </form>
+        </div>
+    </div>
+</header>
+
+<section class="country-calculator">
+    <div class="container">
+        <div class="calculator flex-column">
+            <div class="flex-wrapper">
+                <div class="flex-column parameter">
+                    <div class="parameter-heading period">Срок пребывания</div>
+                    <div class="parameter-value period-value">5</div>
+                </div>
+                <div class="flex-column parameter">
+                    <div class="parameter-heading time">Срок получения визы</div>
+                    <div class="parameter-value time-value">1</div>
+                </div>
+                <div class="flex-column parameter">
+                    <div class="parameter-heading price">Стоимость оформления</div>
+                    <div class="parameter-value price-value">2000</div>
+                </div>
+            </div>
+            <div class="flex-wrapper">
+                <a href="#" class="calculator__link">Подробная информация об условиях получения визы</a>
+                <button class="calculator__button" aria-label="Получить визу в один клик">Получить визу в один клик</button>
+            </div>
+        </div>
+        <ul class="breadcrumbs">
+            <li class="breadcrumb">
+                <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumb">
+                <a href="#">Визы</a>
+            </li>
+            <li class="breadcrumb breadcrumb-last">
+                <a href="#">Визы в Европу</a>
+            </li>
+            <li class="breadcrumb breadcrumb-last">
+                <a href="# " class="breadcrumb-last">Шенгенская виза в Австрию</a>
+            </li>
+
+        </ul>
+
+        <div class="visa-calculator">
+            <h2 class="visa-calculator__head">Рассчитайте стоимость
+                и&nbsp;максимальную&nbsp;длительность вашей визы</h2>
+            <ul class="visa-calculator__steps">
+                <li class="step active" id="calculator_step1">1</li>
+                <li class="step" id="calculator_step2">2</li>
+                <li class="step" id="calculator_step3">3</li>
+                <li class="step" id="calculator_step4">4</li>
+                <span class="step0"></span>
+            </ul>
+            <ul class="visa-calculator__questions">
+                <li class="question question-active" id="question1">
+                    <h3 class="question__heading">1. Выберите цель поездки</h3>
+                    <ul class="question__answers">
+                        <li class="answer">Туризм</li>
+                        <li class="answer">Обучение</li>
+                        <li class="answer">Бизнес</li>
+                        <li class="answer">Медицина</li>
+                    </ul>
+                </li>
+                <li class="question" id="question2">
+                    <h3 class="question__heading">2. Были ли визы за последние 3 года</h3>
+                    <ul class="question__answers space-evenly">
+                        <li class="answer">Да</li>
+                        <li class="answer">Нет</li>
+                    </ul>
+                </li>
+                <li class="question" id="question3">
+                    <h3 class="question__heading">3. Как срочно нужна виза</h3>
+                    <ul class="question__answers">
+                        <li class="answer">Срочно (от 1 дня до 1 недели)</li>
+                        <li class="answer">Несрочно (от недели и более)</li>
+                    </ul>
+                </li>
+                <li class="question last" id="question4">
+                    <h3 class="question__heading">Узнайте результат по телефону, оставьте свой номер</h3>
+                    <form action="#" id="calculator-form">
+                        <input type="tel" id="calculator__phone" placeholder="Введите ваш мобильный">
+                        <input type="submit" class="calculator__submit" value="Узнать стоимость">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="country-description">
+    <div class="container">
+        <h1 class="section-heading">Оформление визы в Австрию</h1>
+        <p>Консульство Австрии является одним из самых требовательных, кроме того республика относится к странам, которые подписали Шенгенский договор. Оформление визы в Австрию в нашем визовом центре осуществляется по всем правилам, которые приняты странами Шенгенского соглашения. Список необходимых документов, соответствующих установленным нормам, а также стоимость зависит от типа и вида шенгенской визы для россиян.
+        </p>
+        <div class="image-block">
+            <img src="src/img/krzysztof-kowalik-RY0TeBWe-p4-unsplash%201.png" alt="Замок бельведер">
+            <div class="image-block__description">Бельведер - самый красивый дворец австрийской столицы, Вена, Австрия</div>
+        </div>
+        <p>Она может быть краткосрочной либо долгосрочной. Если планируется неоднократное посещение республики, делается запрос на открытие мультивизы. В зависимости от цели поездки, виза в Австрию может быть туристической, студенческой, деловой, гостевой. Наличие данного документа дает возможность посещать и другие страны Европейского Союза, которые подписали Шенгенский договор.
+        </p>
+        <p>
+            Схема действий для получения визы в Австрию универсальна: необходимо собрать пакет документов в соответствие со всеми требованиями, заполнить анкету, назначить дату собеседования в консульстве. Все достаточно просто, но, как показывает практика, процесс оформления визы является трудоемким и занимает много времени. Чтобы исключить вероятность возникновения форс-мажорных ситуаций, наиболее приемлемым вариантом для вас станет обращение в наш визовый центр, где этот трудоемкий процесс пройдет без вашего участия.
+        </p>
+        <p>
+            Получить данный документ можно, подав такой пакет бумаг:
+        </p>
+        <ul>
+            <li>загранпаспорт, действительный не меньше трех месяцев после того, как завершится срок действия визы;</li>
+            <li>копия первой страницы паспорта;</li>
+            <li>заполненная анкета;</li>
+            <li>2 цветные фотографии 3.5 х 4.5 см;</li>
+            <li>оригинал справки с места работы с указанием точного адреса,   должности, оклада.</li>
+        </ul>
+        <p>Прежде чем начать работу, наши менеджеры консультируют по поводу документов, требующихся для открытия визы в Австрию. Мы сделаем все, чтобы ваша мечта о путешествии осуществилась.</p>
+        
+
+    </div>
+
+</section>
+<section class="documents">
+    <div class="container">
+        <h2 class="section-heading">Список документов</h2>
+        <div class="flex-wrapper">
+            <div class="required-documents">
+                <h3 class="documents-heading">
+                    Необходимые документы
+                </h3>
+                <ul class="documents-list">
+                    <li class="documents-list__item document">
+                        Заграничный паспорт с окончанием срока действия не менее трех месяцев ( + старый загран паспорт если имеется)
+                    </li>
+                    <li class="documents-list__item document">
+                        2 цветные фотографии 3,5 х 4,5                    </li>
+                    <li class="documents-list__item document">
+                        Справка с места работы                    </li>
+                    <li class="documents-list__item document">
+                        Выписка с банковского счета или справка об обмене валюты из расчета не менее 60 евро в сутки на человека                    </li>
+                    <li class="documents-list__item document">
+                        Бронь авиабилета и отеля (приглашения) если имеется                    </li>
+                    <li class="documents-list__item document">
+                        Копия паспорта РФ                    </li>
+                    <li class="documents-list__item document">
+                        Анкета туриста                    </li>
+                    <li class="documents-list__item document">
+                        Согласие на обработку персональных данных                   </li>
+                    <li class="documents-list__item document">
+                        Страховой полис. Необходимо предоставить страховой полис, на случай болезни и от несчастных случаев на сумму не менее 30.000 евро на весь срок пребывания и на все страны Шенгенского пространства.Обратите внимание на то, что страхование должно покрывать все риски (в том числе риски зимних видов спорта)                  </li>
+
+                </ul>
+                <span>Просьба уточнять в каждом конкретном случае точный список документов у Вашего менеджера </span>
+            </div>
+            <div class="accordeon">
+                <div class="accordeon__item accordeon__item_active">
+                    <span class="accordeon__heading">Для детей и учащихся</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">Копия свидетельства о рождении, заверенная нотариально</li>
+                        <li class="document">Оригинал или нотариально заверенная копия согласия на выезд ребенка от не выезжающего родителя</li>
+                        <li class="document">Справка с места учебы</li>
+                        <li class="document">Справка с места работы</li>
+                        <li class="document">Спонсорское письмо</li>
+                        <li class="document">Копии внутренних паспортов родителей</li>
+
+                    </ul>
+
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Для детей и учащихся</span>
+
+                        <ul class="accordeon__list">
+                            <span>Дополнительно к общему списку</span>
+                            <li class="document">копия свидетельства ОГРНИП </li>
+                            <li class="document">копия свидетельства ИНН</li>
+                        </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Для безработных и пенсионеров</span>
+
+                    <ul class="accordeon__list">
+                        <span>Несмотря на то, что на законодательном уровне не существует каких-либо ограничений на въезд в Шенгенские страны для нетрудоустроенных граждан, фактически подобным лицам получить визу бывает сложнее. В основном трудности связаны с оформлением документов. Так, при подготовке визы в Австрию для неработающих пенсионеров, помимо основного пакета бумаг, необходимо представить в консульство:</span>
+                        <li class="document">копию пенсионного удостоверения;</li>
+                        <li class="document">свидетельства финансового благополучия (например, выписка с банковского счета);
+                            спонсорское письмо (если собственных средств на путешествие недостаточно);</li>
+                        <li class="document">справку с места работы спонсора.</li>
+                    </ul>
+
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Частная виза</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">загранпаспорт, копия гражданского паспорта; </li>
+                        <li class="document">визовая анкета, два стандартных фото;</li>
+                        <li class="document">заверенное приглашение для гостя; </li>
+                        <li class="document">финансовое обеспечение поездки;</li>
+                        <li class="document">подтверждение брони жилья и билетов; </li>
+                        <li class="document">действующая медицинская страховка;</li>
+                        <li class="document">сведения о целях и сроках визита.</li>
+                    </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Виза на лечение</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">копия паспорта гражданина РФ; </li>
+                        <li class="document">действующий загранпаспорт;</li>
+                        <li class="document">фотографии согласно образцу; </li>
+                        <li class="document">визовая анкета с подписью;</li>
+                        <li class="document">основные данные о диагнозе; </li>
+                        <li class="document">приглашение из клиники;</li>
+                        <li class="document">квитанция предоплаты услуг;</li>
+                        <li class="document">медицинский полис путешественника.</li>
+                    </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Рабочая виза</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">визовая анкета; </li>
+                        <li class="document">паспорт РФ;</li>
+                        <li class="document">загранпаспорт; </li>
+                        <li class="document">2 фотографии;</li>
+                        <li class="document">подтверждение квалификации; </li>
+                        <li class="document">приглашение от работодателя;</li>
+                        <li class="document">бронь билетов и гостиницы;</li>
+                        <li class="document">финансовое обеспечение;</li>
+                        <li class="document">медицинская страховка.</li>
+                    </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Виза невесты</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">Заполненная анкета с подписью кандидата. Информацию вносят печатными буквами английским шрифтом. </li>
+                        <li class="document">Актуальный загранпаспорт + ксерокопия первого листа.</li>
+                        <li class="document">2 цветных фотоснимка 35×45 мм. </li>
+                        <li class="document">Медицинская страховка с минимальным покрытием 30 000 €.</li>
+                        <li class="document">Ксерокопия погашенных ранее «шенгенов» за последние 3 года. </li>
+                        <li class="document">Гарантии финансовой обеспеченности претендента: справки с работы, банковские выписки, письмо от спонсора с ксерокопией его паспорта и справкой о доходах.</li>
+                    </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Виза в срочном порядке</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">Загранпаспорт и копии страниц с основными данными. </li>
+                        <li class="document">Заполненная анкета с личной подписью заявителя.
+                        </li>
+                        <li class="document">2 фотографии 3,5×4,5 см.
+                        </li>
+                        <li class="document">Справка с работы (с указанием должности и оклада).
+                        </li>
+                        <li class="document">Подтверждение брони отеля.
+                        </li>
+                        <li class="document">Медицинская страховка.</li>
+                        <li class="document">Бронь авиабилетов в обе стороны.
+                        </li>
+                        <li class="document">Финансовое обеспечение поездки (выписка со счета в банке, чек из банкомата).
+                        </li>
+                    </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Студенческая виза</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">паспорт РФ и загранпаспорт; </li>
+                        <li class="document">свидетельство о рождении;</li>
+                        <li class="document">2 фотографии стандартного образца; </li>
+                        <li class="document">заполненная визовая анкета;</li>
+                        <li class="document">квитанция об уплате сбора; </li>
+                        <li class="document">данные о предоплате за обучение;</li>
+                        <li class="document">финансовое обеспечение поездки;</li>
+                        <li class="document">подтверждение места проживания;</li>
+                        <li class="document">справка об отсутствии судимости; </li>
+                        <li class="document">бронь проездных билетов;</li>
+                        <li class="document">медицинская страховка</li>
+                    </ul>
+                </div>
+                <div class="accordeon__item">
+                    <span class="accordeon__heading">Транзитная виза</span>
+
+                    <ul class="accordeon__list">
+                        <li class="document">паспорт гражданина РФ и загранпаспорт; </li>
+                        <li class="document">визовая анкета установленной формы;</li>
+                        <li class="document">две фотографии по образцу; </li>
+                        <li class="document">бронь проездных документов;</li>
+                        <li class="document">описание маршрута следования; </li>
+                        <li class="document">разрешение на въезд в страну следования;</li>
+                        <li class="document">полное финансовое обеспечение поездки;</li>
+                        <li class="document">медицинская страховка на период пребывания за рубежом.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="our-contacts">
+    <div class="container">
+        <h2 class="section-heading">Наши контакты</h2>
+        <div class="flex-wrapper">
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f1ed91e2182832b2efc48637c4a81edae2c63c6c3d3faee678937b37fe8304d&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="contact-block">
+                <span class="contact-block__heading">Адрес</span>
+                <span class="contact-block__data">г. Москва, Фролов переулок, д.1</span>
+                <span class="contact-block__heading">Телефон</span>
+                <span class="contact-block__data"><a href="tel:+79605950422">8(960)595-04-22</a></span>
+                <span class="contact-block__heading">Мессенджеры</span>
+                <div class="flex-wrapper">
+                    <a href="tg.me" class="telegramm-link"></a>
+                    <a href="#" class="whattsapp-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="callback-section">
+    <div class="callback-block">
+        <div class="container">
+            <div class="from-block">
+                <h3 class="callback-block__heading">В какую страну нужна виза?</h3>
+                <form class="callback-form">
+                    <label for="country-select">
+                        Выберите страну
+                        <select name="countries" id="country-select">
+                            <option value="Austria" selected>Австрия</option>
+                        </select>
+                    </label>
+                    <label for="phone">
+                        Телефон для связи
+                        <input id="phone" type="tel" placeholder="8 (000) 000-00-00" pattern="">
+                    </label>
+                    <input type="submit" value="Получить визу" class="callback-form__submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="basement">
+    <div class="container">
+        <img src="src/img/logo-black.png" alt="Zettavisa" class="logo">
+        <div class="socials">
+            <span>Всегда на связи</span>
+            <a href="tel:+79605950422">8 (960)595-04-22</a>
+            <span>Напишите нам</span>
+            <div class="flex-wrapper">
+                <a href="tg.me" class="telegramm-link"></a>
+                <a href="#" class="whattsapp-link"></a>
+            </div>
+        </div>
+        <div class="payments">
+
+        </div>
+    </div>
+</footer>
+<div class="modals">
+    <div id="modal-about" class="modals__description modal modal_small">
+        <div class="flex-wrapper">
+            <div class="modal__heading">Описание услуги</div>
+            <div class="modal__close-button"></div>
+        </div>
+        <div class="modal__wrapper">
+            <h3 class="section-heading">Оформление виз</h3>
+            <p class="modal__text">Товарищи! укрепление и развитие структуры в значительной степени обуславливает создание модели развития. Товарищи! постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что консультация с широким активом играет важную роль в формировании соответствующий условий активизации. </p>
+            <button class="callback">Оформить заявку</button>
+        </div>
+    </div>
+
+    <div class="modal__form modal modal_small">
+        <div class="flex-wrapper">
+            <div class="modal__heading">Оставить заявку</div>
+            <div class="modal__close-button"></div>
+        </div>
+        <div class="modal__wrapper">
+            <h3 class="section-heading">Перезвоним вам в ближайшее время</h3>
+            <form class="callback-form">
+                <label for="modal-form__name">
+                    Ваше имя
+                    <input id="modal-form__name" placeholder="Как к вам обращаться?" required>
+                </label>
+                <label for="modal-form__phone">
+                    Телефон для связи
+                    <input id="modal-form__phone" type="tel" placeholder="8 (000) 000-00-00" required>
+                </label>
+                <input type="submit" value="Получить визу" class="callback-form__submit modal-form__submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/jquery-3.5.1.min.js"></script>
+<script src="scripts/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/curculator.js"></script>
+</body>
+</html>
