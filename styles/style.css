@@ -361,6 +361,7 @@ header .callback-form{
     width: 300px;
     justify-content: center;
     border-radius: 10px;
+    overflow: hidden;
     list-style: none;
     outline: none;
     margin: 0 5px;
@@ -369,11 +370,21 @@ header .callback-form{
     position: relative;
     width: 300px;
     height: 330px;
-    background-image: url('../src/img/liberty.png');
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.country__image{
+    width: 300px;
+    height: 330px;
+}
+
+.country__image-alt{
+    display: none;
+    width: 236px;
+    height: 170px;
 }
 
 .country__inner{
@@ -895,7 +906,7 @@ header .callback-form{
     float: left;
     display: inline-block;
     list-style:none;
-    /*max-width: 290px;*/
+    width: 290px;
     padding-right: 20px;
     border-right: 1px solid  #E0E0E0;
     margin-right: 30px;
@@ -1305,7 +1316,7 @@ header .callback-form{
 }
 
 .prices .rates{
-    padding-top: 322px;
+    padding-top: 227px;
     margin-top: 0;
 }
 
@@ -1987,7 +1998,11 @@ header .callback-form{
         margin: 15px 0;
     }
     .rates-list{
-        margin: 75px auto 0;
+        margin: 65px auto 0;
+    }
+
+    .rates-list .slick-track{
+        padding-top: 10px;
     }
 
     .rate{
@@ -2149,6 +2164,11 @@ header .callback-form{
         padding: 0;
     }
 
+    .countries-list .slick-track{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     .country{
         margin: 0 15px;
         height: 371px;
@@ -2183,6 +2203,14 @@ header .callback-form{
         border-radius: 0;
     }
 
+    .country__image{
+        display: none !important;
+    }
+    
+    .country__image-alt{
+        display: block !important;
+    }
+    
     .country__inner .country__heading{
         display: flex;
         justify-content: flex-start;
@@ -2318,6 +2346,14 @@ header .callback-form{
 
    .callback-section .container{
        padding-top: 0;
+   }
+
+   #modal-rates{
+       height: 100vh;
+   }
+
+   #modal-rates ul{
+       overflow-y: scroll;
    }
 
 }

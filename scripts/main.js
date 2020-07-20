@@ -8,26 +8,30 @@ $(document).ready(function () {
 
     $('.countries-list').slick({
         slidesToShow:4,
+        variableWidth: true,
         arrows:true,
         responsive:[
             {
                 breakpoint:1400,
                 settings:{
                     slidesToShow: 3,
+                    variableWidth: true
                 }
             },
             {
                 breakpoint: 1100,
                 settings: {
                     arrows:false,
-                    slidesToShow: 3
+                    slidesToShow: 3,
+                    variableWidth: true
                 }
             },
             {
                 breakpoint: 960,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false
+                    arrows: false,
+                    variableWidth: true
                 }
             },
             {
@@ -35,7 +39,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
-                    slidesToShow: 1,
                     centerMode: true,
                     variableWidth: true
                 }
@@ -111,24 +114,28 @@ $(document).ready(function () {
         slidesToShow:3,
         arrows:true,
         infinite: false,
+        variableWidth:true,
         responsive:[
             {
                 breakpoint:1400,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 3,
+                    variableWidth:true
                 }
             },
             {
                 breakpoint: 960,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    variableWidth:true
                 }
             },
             {
                 breakpoint: 660,
                 settings: {
                     slidesToShow: 1,
-                    arrows:false
+                    arrows:false,
+                    variableWidth:true
                 }
             }
         ]
@@ -195,6 +202,7 @@ $(window).resize(function () {
                         speed: 300,
                         slidesToShow: 1,
                         centerMode: true,
+                        variableWidth:true
                     }
                 }
             ]
