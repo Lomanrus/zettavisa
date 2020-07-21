@@ -2067,10 +2067,25 @@ header .callback-form{
         width: auto;
         padding: 0;
     }
+
+    .header-small .container>.flex-wrapper{
+        align-items: flex-start;
+        width: auto;
+        padding: 0 0 30px;
+    }
+
     .header-small .container>.flex-wrapper img{
         width: 140px;
     }
+    .header-small .container>.flex-wrapper{
+        align-items: flex-start;
+        width: auto;
+        padding: 0;
+    }
 
+    .header-small .socials>.flex-wrapper{
+        margin-top: 25px;
+    }
     .socials .flex-wrapper{
         padding: 0;
     }
@@ -2081,7 +2096,7 @@ header .callback-form{
         width: 100%;
         padding: 35px 20px;
     }
-    .header .container{
+    .header .container, .header-small .container{
         padding: 20px;
         height: 100%;
         display: flex;
@@ -2093,7 +2108,7 @@ header .callback-form{
         width: auto;
         padding: 0 0 30px;
     }
-    .header .container>.flex-wrapper img{
+    .header .container>.flex-wrapper img, .header-small .container>.flex-wrapper img{
         width: 101px;
     }
     .header .from-block{
@@ -2194,6 +2209,7 @@ header .callback-form{
 
     .advantages-list{
         display: block;
+        margin-top: 20px;
     }
 
     .advantages-list>.flex-column{
@@ -2208,6 +2224,7 @@ header .callback-form{
 
     .advantage{
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .advantage img{
@@ -2414,6 +2431,32 @@ header .callback-form{
 
    #modal-rates ul{
        overflow-y: scroll;
+   }
+
+   .visa-calculator__steps{
+       width: 90%;
+   }
+
+   .visa-calculator__steps span{
+       left: 0;
+   }
+
+   .visa-calculator__questions{
+       width: 90%;
+   }
+
+   .question__answers .answer{
+       width: 100%;
+   }
+
+   #calculator-form{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   #calculator-form .calculator__submit{
+       margin-top: 20px;
    }
 
 }
