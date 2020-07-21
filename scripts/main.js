@@ -71,6 +71,8 @@ $(document).ready(function () {
     $('.advantages-list').slick({
         slidesToShow:1,
         arrows:false,
+        rows:3,
+        slidesPerRow: 3,
         responsive:[
             {
                 breakpoint:4000,
@@ -81,7 +83,9 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow:1,
                     dots:true,
-                    infinite:false
+                    infinite:false,
+                    rows:3,
+                    slidesPerRow: 1
                 }
             }
         ]
@@ -102,7 +106,9 @@ $(document).ready(function () {
                     dots:true,
                     infinite:false,
                     centerMode:true,
-                    variableWidth:true
+                    variableWidth:true,
+
+
                 }
             }
         ]
@@ -151,6 +157,7 @@ $(window).resize(function () {
         $('.advantages-list').slick({
             slidesToShow:1,
             arrows:false,
+            rows:3,
             responsive:[
                 {
                     breakpoint:4000,
@@ -161,7 +168,9 @@ $(window).resize(function () {
                     settings: {
                         slidesToShow:1,
                         dots:true,
-                        infinite:false
+                        infinite:false,
+                        rows:3,
+                        slidesPerRow:1
                     }
                 }
             ]
