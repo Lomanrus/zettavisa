@@ -255,3 +255,4 @@ $('.service__button').on('click', function () {
     $('.modals').show()
     $('#modal-about').show()
 })
+

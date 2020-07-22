@@ -2247,8 +2247,15 @@ header .callback-form{
     }
 
     .advantage{
+        display: flex !important;
+        align-items: center;
         flex-direction: column;
         margin-top: 20px;
+    }
+
+    .advantage>.flex-column{
+        align-items: center;
+        text-align: center;
     }
 
     .advantage img{
@@ -2483,6 +2490,18 @@ header .callback-form{
        margin-top: 20px;
    }
 
+   .country-description{
+       padding-top: 0   ;
+   }
+
+   .documents{
+       padding-top: 0;
+   }
+
+   .modal__services{
+       height: 55vh;
+       overflow: scroll;
+   }
 }
 
 @media (max-width: 380px) {
