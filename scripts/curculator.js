@@ -23,3 +23,9 @@ $('.accordeon__heading').on('click',function () {
     $(this).parent('.accordeon__item').toggleClass('accordeon__item_active')
 })
 
+
+$('.calculator__button').on('click',function () {
+    alert('click')
+    $('.modals').show()
+    $('#modal-form').show()
+})
