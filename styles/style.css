@@ -608,7 +608,7 @@ header .callback-form{
 /*Новости*/
 .news{
     padding: 70px 0;
-    background-image: url("../src/img/news-bg.png");
+    background: #f2f2f2 url("../src/img/news-bg.png") no-repeat;
 }
 
 .news .section-heading{
@@ -654,6 +654,13 @@ header .callback-form{
     font-size: 18px;
     line-height: 22px;
     color: #1F1F1F;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.news-wrapper{
+    height: 200px;
     text-overflow: ellipsis;
 }
 
@@ -662,6 +669,8 @@ header .callback-form{
     position: absolute;
     bottom: 30px;
     left: 36px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*Блок с формой обратной связи*/
@@ -2406,8 +2415,9 @@ header .callback-form{
         height: auto;
     }
 
+
     .single-news__text{
-        max-height: none;;
+        max-height: none;
     }
     .single-news__link{
         position: static;

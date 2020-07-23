@@ -256,3 +256,12 @@ $('.service__button').on('click', function () {
     $('#modal-about').show()
 })
 
+
+//Раскрытие новостей
+
+$('.single-news__link').on('click', function () {
+    $(this).parents('.single-news').css('height', 'auto')
+    $(this).parents('.single-news').children('.single-news__text').css('max-height', 'none')
+    $(this).parents('.single-news').children('.single-news__text').css('height', 'auto')
+    $(this).hide()
+})
