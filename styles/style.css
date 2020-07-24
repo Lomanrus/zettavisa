@@ -1843,6 +1843,54 @@ header .callback-form{
 .services-list .slick-dots .slick-active button{
     background-color: #489825;
 }
+
+/*404*/
+
+.no-page{
+    height:540px;
+    background: transparent url("../src/img/404-bg.png");
+}
+.no-page .container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.no-page .flex-column{
+    width: 460px;
+}
+
+.no-page h2{
+    color:#fff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.no-page .flex-column a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    background: #EEE300;
+    box-shadow: 0px 4px 6px rgba(190, 181, 0, 0.1);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* black */
+
+    color: #1F1F1F;
+    text-decoration: none;
+}
+
 @media (max-width: 1450px) {
     .country-description .container{
         padding-right:0 ;
