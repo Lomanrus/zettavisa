@@ -26,6 +26,10 @@ ul{
     flex-wrap: wrap;
 }
 
+input[type="submit"]{
+    -webkit-appearance: none;
+}
+
 .flex-wrapper{
     display: flex;
 }
@@ -352,7 +356,7 @@ header .callback-form{
     min-width: 0;
 }
 
-.countries-list .slick-arrow{
+.countries-list .slick-arrow, .news-list .slick-arrow{
     position: absolute;
     top:132px;
     height: 65px;
@@ -365,12 +369,12 @@ header .callback-form{
     z-index: 4;
 }
 
-.countries-list .slick-prev{
+.countries-list .slick-prev, .news-list .slick-prev{
     left: -47px;
     transform: rotate(180deg);
 }
 
-.countries-list .slick-next{
+.countries-list .slick-next, .news-list .slick-next{
     right: -47px;
 }
 
@@ -620,6 +624,7 @@ header .callback-form{
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 40px;
+    position: relative;
 }
 
 .news-list__item{
@@ -630,6 +635,7 @@ header .callback-form{
     list-style: none;
     background-color: #fff;
     border-radius: 10px;
+    margin: 0 15px;
 }
 
 .single-news__heading{
@@ -2132,6 +2138,10 @@ header .callback-form{
 }
 
 @media (max-width: 576px) {
+
+    .modal_small{
+        width: 100%;
+    }
 
     .header{
         background: radial-gradient(77.54% 66.64% at 50.13% 33.36%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 47.19%, #000000 91.67%), url('../src/img/Austria-bg.png') top center;

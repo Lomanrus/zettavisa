@@ -6,10 +6,29 @@ $(function () {
 
 $(document).ready(function () {
 
+    $('.news-list').slick({
+        slidesToShow:3,
+        arrows:true,
+        variableWidth:true,
+        adaptiveHeight:true,
+        infinite:false,
+        responsive:[
+            {
+                breackpoint:1290,
+                slidesToShow:2,
+            },
+            {
+                breackpoint: 960,
+                slidesToShow: 1
+            }
+        ]
+    })
+
     $('.countries-list').slick({
         slidesToShow:4,
         variableWidth: true,
         arrows:true,
+        infinite:false,
         responsive:[
             {
                 breakpoint:1400,
