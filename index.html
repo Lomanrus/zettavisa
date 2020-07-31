@@ -380,6 +380,8 @@
                     <div class="flex-wrapper">
                         <a href="tg.me" class="telegramm-link"></a>
                         <a href="#" class="whattsapp-link"></a>
+                        <a href="#" class="instagramm-link"></a>
+                        <a href="#" class="facebook-link"></a>
                     </div>
                 </div>
             </div>
@@ -413,11 +415,13 @@
             <img src="src/img/logo-black.png" alt="Zettavisa" class="logo">
             <div class="socials">
                 <span>Всегда на связи</span>
-                <a href="tel:+79605950422">8 (960)595-04-22</a>
+                <a href="tel:+79605950422" class="socials-phone">8 (960)595-04-22</a>
                 <span>Напишите нам</span>
                 <div class="flex-wrapper">
                     <a href="tg.me" class="telegramm-link"></a>
                     <a href="#" class="whattsapp-link"></a>
+                    <a href="#" class="instagramm-link"></a>
+                    <a href="#" class="facebook-link"></a>
                 </div>
             </div>
             <div class="payments">
@@ -433,6 +437,12 @@
                 <div class="modal__close-button"></div>
             </div>
             <div class="modal__wrapper">
+                <div class="preloader">
+                    <div class='sk-double-bounce'>
+                        <div class='sk-child sk-double-bounce-1'></div>
+                        <div class='sk-child sk-double-bounce-2'></div>
+                    </div>
+                </div>
                 <h3 class="section-heading">Оформление виз</h3>
                 <p class="modal__text">Товарищи! укрепление и развитие структуры в значительной степени обуславливает создание модели развития. Товарищи! постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития. Не следует, однако забывать, что консультация с широким активом играет важную роль в формировании соответствующий условий активизации. </p>
                 <button class="callback">Оформить заявку</button>
@@ -464,89 +474,98 @@
                 <div class="modal__heading">Подробнее о тарифах</div>
                 <div class="modal__close-button"></div>
             </div>
-            <ul class="modal__wrapper">
-                <li class="modal__rate">
-                    <span class="modal-rate__heading">«Под ключ»</span>
-                    <ul class="modal__services">
-                        <li>Анкета</li>
-                        <li>Бронирование отеля</li>
-                        <li>Бронирование авиабилетов</li>
-                        <li>От 5 дней</li>
-                        <li>Подача в ВЦ</li>
-                        <li>Консульский сбор</li>
-                        <li>Визовый сбор</li>
-                        <li>Курьерские услуги</li>
-                        <li>Сопровождение на дактилоскопию</li>
-                        <li>Запись в ВЦ</li>
-                        <li class="inactive">Усиливаем визовый пакет для увеличения % одобрения</li>
-                        <li class="inactive">Логистический сбор</li>
-                        <li class="inactive">Страховка на 10 дней</li>
-                    </ul>
-                    <button class="callback">Оставить заявку</button>
+            <div class="flex-column">
+                    <div class="preloader">
+                        <div class='sk-double-bounce'>
+                            <div class='sk-child sk-double-bounce-1'></div>
+                            <div class='sk-child sk-double-bounce-2'></div>
+                        </div>
+                    </div>
 
-                </li>
-                <li class="modal__rate">
-                    <span class="modal-rate__heading">«Под ключ»</span>
-                    <ul class="modal__services">
-                        <li>Анкета</li>
-                        <li>Бронирование отеля</li>
-                        <li>Бронирование авиабилетов</li>
-                        <li>От 5 дней</li>
-                        <li class="inactive">Подача в ВЦ</li>
-                        <li class="inactive">Консульский сбор</li>
-                        <li class="inactive">Визовый сбор</li>
-                        <li class="inactive">Курьерские услуги</li>
-                        <li class="inactive">Сопровождение на дактилоскопию</li>
-                        <li class="inactive">Запись в ВЦ</li>
-                        <li class="inactive">Усиливаем визовый пакет для увеличения % одобрения</li>
-                        <li class="inactive">Логистический сбор</li>
-                        <li class="inactive">Страховка на 10 дней</li>
-                    </ul>
-                    <button class="callback">Оставить заявку</button>
+                <ul class="modal__wrapper">
+                    <li class="modal__rate">
+                        <span class="modal-rate__heading">«Под ключ»</span>
+                        <ul class="modal__services">
+                            <li>Анкета</li>
+                            <li>Бронирование отеля</li>
+                            <li>Бронирование авиабилетов</li>
+                            <li>От 5 дней</li>
+                            <li>Подача в ВЦ</li>
+                            <li>Консульский сбор</li>
+                            <li>Визовый сбор</li>
+                            <li>Курьерские услуги</li>
+                            <li>Сопровождение на дактилоскопию</li>
+                            <li>Запись в ВЦ</li>
+                            <li class="inactive">Усиливаем визовый пакет для увеличения % одобрения</li>
+                            <li class="inactive">Логистический сбор</li>
+                            <li class="inactive">Страховка на 10 дней</li>
+                        </ul>
+                        <button class="callback">Оставить заявку</button>
 
-                </li>
-                <li class="modal__rate">
-                    <span class="modal-rate__heading">«Под ключ»</span>
-                    <ul class="modal__services">
-                        <li>Анкета</li>
-                        <li>Бронирование отеля</li>
-                        <li>Бронирование авиабилетов</li>
-                        <li>От 5 дней</li>
-                        <li>Подача в ВЦ</li>
-                        <li>Консульский сбор</li>
-                        <li>Визовый сбор</li>
-                        <li>Курьерские услуги</li>
-                        <li>Сопровождение на дактилоскопию</li>
-                        <li>Запись в ВЦ</li>
-                        <li>Усиливаем визовый пакет для увеличения % одобрения</li>
-                        <li>Логистический сбор</li>
-                        <li>Страховка на 10 дней</li>
-                    </ul>
-                    <button class="callback">Оставить заявку</button>
+                    </li>
+                    <li class="modal__rate">
+                        <span class="modal-rate__heading">«Под ключ»</span>
+                        <ul class="modal__services">
+                            <li>Анкета</li>
+                            <li>Бронирование отеля</li>
+                            <li>Бронирование авиабилетов</li>
+                            <li>От 5 дней</li>
+                            <li class="inactive">Подача в ВЦ</li>
+                            <li class="inactive">Консульский сбор</li>
+                            <li class="inactive">Визовый сбор</li>
+                            <li class="inactive">Курьерские услуги</li>
+                            <li class="inactive">Сопровождение на дактилоскопию</li>
+                            <li class="inactive">Запись в ВЦ</li>
+                            <li class="inactive">Усиливаем визовый пакет для увеличения % одобрения</li>
+                            <li class="inactive">Логистический сбор</li>
+                            <li class="inactive">Страховка на 10 дней</li>
+                        </ul>
+                        <button class="callback">Оставить заявку</button>
 
-                </li>
-                <li class="modal__rate">
-                    <span class="modal-rate__heading">«Под ключ»</span>
-                    <ul class="modal__services">
-                        <li>Анкета</li>
-                        <li>Бронирование отеля</li>
-                        <li>Бронирование авиабилетов</li>
-                        <li>От 5 дней</li>
-                        <li>Подача в ВЦ</li>
-                        <li>Консульский сбор</li>
-                        <li>Визовый сбор</li>
-                        <li>Курьерские услуги</li>
-                        <li>Сопровождение на дактилоскопию</li>
-                        <li>Запись в ВЦ</li>
-                        <li>Усиливаем визовый пакет для увеличения % одобрения</li>
-                        <li>Логистический сбор</li>
-                        <li>Страховка на 10 дней</li>
-                    </ul>
-                    <button class="callback">Оставить заявку</button>
+                    </li>
+                    <li class="modal__rate">
+                        <span class="modal-rate__heading">«Под ключ»</span>
+                        <ul class="modal__services">
+                            <li>Анкета</li>
+                            <li>Бронирование отеля</li>
+                            <li>Бронирование авиабилетов</li>
+                            <li>От 5 дней</li>
+                            <li>Подача в ВЦ</li>
+                            <li>Консульский сбор</li>
+                            <li>Визовый сбор</li>
+                            <li>Курьерские услуги</li>
+                            <li>Сопровождение на дактилоскопию</li>
+                            <li>Запись в ВЦ</li>
+                            <li>Усиливаем визовый пакет для увеличения % одобрения</li>
+                            <li>Логистический сбор</li>
+                            <li>Страховка на 10 дней</li>
+                        </ul>
+                        <button class="callback">Оставить заявку</button>
 
-                </li>
+                    </li>
+                    <li class="modal__rate">
+                        <span class="modal-rate__heading">«Под ключ»</span>
+                        <ul class="modal__services">
+                            <li>Анкета</li>
+                            <li>Бронирование отеля</li>
+                            <li>Бронирование авиабилетов</li>
+                            <li>От 5 дней</li>
+                            <li>Подача в ВЦ</li>
+                            <li>Консульский сбор</li>
+                            <li>Визовый сбор</li>
+                            <li>Курьерские услуги</li>
+                            <li>Сопровождение на дактилоскопию</li>
+                            <li>Запись в ВЦ</li>
+                            <li>Усиливаем визовый пакет для увеличения % одобрения</li>
+                            <li>Логистический сбор</li>
+                            <li>Страховка на 10 дней</li>
+                        </ul>
+                        <button class="callback">Оставить заявку</button>
 
-            </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
         <div class="modal" id="modal-success">
             <div class="flex-wrapper">

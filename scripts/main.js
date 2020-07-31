@@ -27,6 +27,7 @@ $(document).ready(function () {
     $('.countries-list').slick({
         slidesToShow:4,
         variableWidth: true,
+        adaptiveHeight:true,
         arrows:true,
         infinite:false,
         responsive:[
@@ -34,7 +35,8 @@ $(document).ready(function () {
                 breakpoint:1400,
                 settings:{
                     slidesToShow: 3,
-                    variableWidth: true
+                    variableWidth: true,
+                    adaptiveHeight:true,
                 }
             },
             {
@@ -42,7 +44,8 @@ $(document).ready(function () {
                 settings: {
                     arrows:false,
                     slidesToShow: 3,
-                    variableWidth: true
+                    variableWidth: true,
+                    adaptiveHeight:true
                 }
             },
             {
@@ -50,7 +53,8 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     arrows: false,
-                    variableWidth: true
+                    variableWidth: true,
+                    adaptiveHeight:true
                 }
             },
             {
@@ -59,7 +63,8 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     centerMode: true,
-                    variableWidth: true
+                    variableWidth: true,
+                    adaptiveHeight:true
                 }
             }
         ]
@@ -166,8 +171,6 @@ $(document).ready(function () {
         ]
     })
 
-    $('#modal-rates').show()
-    $('#modal-rates').hide()
 
 })
 
@@ -244,11 +247,11 @@ $(window).resize(function () {
 
 $('.modal__close-button').on('click', function () {
     $(this).parents('.modal').toggle()
-    $(this).parents('.modals').toggle()
+    $(this).parents('.modals').toggleClass('modals_show')
 })
 
 $('.rate__more-info').on('click', function () {
-    $('.modals').css('display','flex')
+    $('.modals').toggleClass('modals_show')
     $('#modal-rates').show()
 
     $('#modal-rates .modal__wrapper').css('width','1201')
@@ -266,12 +269,12 @@ $('#modal-about').on('click','.callback',function () {
 })
 
 $('.callback').on('click',function () {
-    $('.modals').show()
+    $('.modals').toggleClass('modals_show')
     $('#modal-form').show()
 })
 
 $('.service__button').on('click', function () {
-    $('.modals').show()
+    $('.modals').toggleClass('modals_show')
     $('#modal-about').show()
 })
 

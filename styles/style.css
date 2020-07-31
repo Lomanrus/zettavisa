@@ -1,3 +1,60 @@
+.preloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.sk-double-bounce {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    margin: auto;
+}
+.sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #337ab7;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-double-bounce 2.0s infinite ease-in-out;
+    animation: sk-double-bounce 2.0s infinite ease-in-out;
+}
+.sk-double-bounce .sk-double-bounce-2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-double-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes sk-double-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
 
 html {
     box-sizing: border-box;
@@ -220,7 +277,7 @@ header .callback-form{
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    height: 374px;
+    height: 374px !important;
     padding: 69px 30px 20px;
     background-color:#fff;
     border-radius: 10px;
@@ -758,17 +815,21 @@ header .callback-form{
 }
 
 .socials{
-    width: 147px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 320px;
 }
 
 .socials span{
     width: 100%;
-    text-align: right;
+    text-align: center;
     margin-bottom: 5px;
+}
+
+.socials .socials-phone{
+    width: 100%;
+    text-align: center;
 }
 
 .socials a{
@@ -787,7 +848,12 @@ header .callback-form{
     justify-content: flex-end;
 }
 
-.telegramm-link, .whattsapp-link{
+footer .socials .flex-wrapper a{
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+.telegramm-link, .whattsapp-link, .instagramm-link, .facebook-link{
     height: 43px;
     width: 43px;
     border-radius: 50%;
@@ -798,9 +864,9 @@ header .callback-form{
     background-repeat: no-repeat;
 }
 
-.socials .flex-wrapper a:not(:first-child){
-    margin-left: 18px;
-}
+/*.socials .flex-wrapper a:nth-of-type(2n){*/
+/*    margin-left: 18px;*/
+/*}*/
 
 .socials .telegramm-link{
     background-image: url('../src/icons/telegram.svg');
@@ -836,14 +902,15 @@ header .callback-form{
     left: 0;
     height: 100vh;
     width: 100vw;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.4);
     z-index: 999999;
     display: none;
 }
-
+.modals_show{
+    display:flex;
+}
 .modal{
     display: flex;
     flex-direction: column;
@@ -873,6 +940,7 @@ header .callback-form{
 }
 
 .modal__wrapper{
+    position: relative;
     padding: 35px 40px 40px;
 }
 
@@ -928,6 +996,11 @@ header .callback-form{
 #modal-rates{
     display: none;
     width: 1200px;
+    max-height: 100vh;
+}
+
+#modal-rates .flex-column{
+    position: relative;
 }
 
 #modal-success{
@@ -956,7 +1029,10 @@ header .callback-form{
 }
 
 
-
+.modal__services{
+    height: 45vh;
+    overflow: scroll;
+}
 .modal__services li{
     list-style: none;
     font-size: 18px;
@@ -1801,7 +1877,7 @@ header .callback-form{
 }
 
 .contact-block .flex-wrapper{
-    width: 95px;
+    width: 190px;
     justify-content: space-between;
 }
 
@@ -1814,6 +1890,16 @@ header .callback-form{
 .contact-block .whattsapp-link{
     background-color: #48C95F;
     background-image: url('../src/icons/wa-white.svg');
+    border: none;
+}
+
+.contact-block .instagramm-link, .socials .instagramm-link{
+    background-image: url('../src/icons/instagramm.svg');
+    border: none;
+}
+
+.contact-block .facebook-link, .socials .facebook-link{
+    background-image: url('../src/icons/facebook.svg');
     border: none;
 }
 
@@ -2271,7 +2357,11 @@ header .callback-form{
     }
     
     .socials .flex-wrapper{
-        justify-content: center;
+        justify-content: space-evenly;
+    }
+    
+    .socials a{
+        font-style: 16px;
     }
 
     .all-regions-btn{
@@ -2342,7 +2432,7 @@ header .callback-form{
 
     .country{
         margin: 0 15px;
-        height: 371px;
+        height: 371px !important;
         width: 236px;
         overflow: hidden;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
