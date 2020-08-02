@@ -12,7 +12,7 @@ $('.visa-calculator__questions').on('click', '.question-active .answer',function
     let k=$('.visa-calculator__steps')
     var j = [];
     //На всякий случай обнуляем объект на первом вопросе
-    if (n.parents('.question1').length===0){
+    if (n.parents('.question1').length===1){
         Answers={}
     }
     //Получаем текст вопроса
@@ -26,7 +26,6 @@ $('.visa-calculator__questions').on('click', '.question-active .answer',function
     k.find('.active').removeClass('active').next('li').addClass('active')
     k.find('span').removeClass().addClass("step"+l.index());
     Answers[question]=answer
-    return false
 })
 
 $('.accordeon__heading').on('click',function () {
